@@ -1,3 +1,10 @@
 .row-padding-small {
     padding: 6px 3px;
 }
+
+.line-offset-1 {
+    margin-top: $base-ratio * 1px;
+}
+.line-offset-8 {
+    margin-top: $base-ratio * 8px;
+}

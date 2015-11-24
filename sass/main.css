@@ -8,6 +8,12 @@ body, body * {
 .row-padding-small {
   padding: 6px 3px; }
 
+.line-offset-1 {
+  margin-top: 12px; }
+
+.line-offset-8 {
+  margin-top: 96px; }
+
 html,
 body,
 .full-height {
@@ -265,9 +271,9 @@ body,
 
 .scroll-area {
   overflow-y: auto !important;
-  -webkit-flex: 1 1 0px;
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0px; }
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%; }
 
 @media (max-width: 767px) {
   .container-flush-both-xs {
@@ -716,6 +722,13 @@ h3 {
     border-color: #ccc; }
   .timeline-disabled:after {
     background: #ccc; }
+
+.circle {
+  border-radius: 100%; }
+
+.square-96px {
+  width: 96px;
+  height: 96px; }
 
 .text-center {
   text-align: center; }
