@@ -70,3 +70,8 @@ node_modules
 # sftp configuration file
 sftp-config.json
 
+#-----------------
+# CSS / Sass
+#-----------------
+*.scssc
+*.css.map
