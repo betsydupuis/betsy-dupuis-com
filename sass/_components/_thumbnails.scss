@@ -1,0 +1,33 @@
+.thumbnail-group {
+    position: relative;
+    overflow: hidden;
+
+    > .thumbnail-group-caption {
+        display: none;
+        flex: none;
+    }
+
+    &:hover {
+        border-left: 12px solid $wine;
+        img {
+            -webkit-filter: blur(3px);
+        }
+
+        > .thumbnail-group-caption {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+
+            /* vertical-align: middle; */
+            /* display: inline-block; */
+            display: inline-flex;
+            align-content: center;
+            background: white;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,8 +1,10 @@
 //===========================
 // Variables and mixins
 //===========================
+@import "variables/color-scheme-mid-century";
 @import "variables";
 @import "_mixins/grid";
+@import "_mixins/typography-truncate";
 
 
 //===========================
@@ -25,6 +27,7 @@
 @import "_components/cards";
 @import "_components/timelines";
 @import "_components/design-elements";
+@import "_components/thumbnails";
 
 //===========================
 // Helpers

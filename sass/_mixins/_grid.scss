@@ -29,8 +29,8 @@
 
 @mixin row-flex {
     -ms-flex-line-pack: start;
-    -webkit-align-content: flex-start;
-    align-content: flex-start;
+            -webkit-align-content: flex-start;
+            align-content: flex-start;
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
@@ -83,11 +83,15 @@ $row-flushing-offset: ($viewport-margin + $grid-gutter-width / 2) * -1;
 }
 
 @mixin row-flush-both {
-    flex: 1 1 0%;
+    -webkit-flex: 1 1 0%;
+        -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
     @include row-flush-left;
     @include row-flush-right;
     > col {
-        flex: 1 1 auto;
+        -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
     }
 }
 

@@ -61,8 +61,8 @@ body,
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-line-pack: stretch;
-    -webkit-align-content: stretch;
-    align-content: stretch;
+            -webkit-align-content: stretch;
+            align-content: stretch;
 }
 
 .flex-none {
@@ -80,6 +80,7 @@ body,
     position: relative;
     padding-left: $viewport-margin;
     padding-right: $viewport-margin;
+    overflow-x: hidden;
 }
 
 // Grid Row
@@ -197,19 +198,11 @@ $row-flushing-offset: ($viewport-margin + $grid-gutter-width / 2) * -1;
 .col-flush-left {
     // Works only for column closest to the left
     @extend .container-flush-left;
-
-    &[class*="col"] {
-        padding-left: $viewport-margin + $grid-gutter-width / 2;
-    }
 }
 
 .col-flush-right {
     // Works only for column closest to the right
     @extend .container-flush-right;
-
-    &[class*="col"] {
-        padding-right: $viewport-margin + $grid-gutter-width / 2;
-    }
 }
 
 .col-flush-both, .col-flush-left.col-flush-right {
@@ -283,6 +276,11 @@ $row-flushing-offset: ($viewport-margin + $grid-gutter-width / 2) * -1;
     .no-padding-xs {
         padding: 0;
     }
+    .flex-none-xs {
+        -webkit-flex: none !important;
+            -ms-flex: none !important;
+                flex: none !important;
+    }
 }
 
 // Small grid
@@ -299,6 +297,7 @@ $row-flushing-offset: ($viewport-margin + $grid-gutter-width / 2) * -1;
             margin-left: make-offset($i, $grid-columns);
         }
     }
+
 }
 
 // Medium grid
