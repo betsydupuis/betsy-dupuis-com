@@ -22,6 +22,9 @@
     <link rel="stylesheet"
       href="../sass/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body>
@@ -35,59 +38,52 @@
                     <div class="scroll-area-fixed">
                         <div class="row row-padding row-center scroll-area-fixed">
                             <div class="col xs-12 lg-8 btn-group center">
-                                <button class="btn  btn-small btn-ghost btn-active"> About </button>
-                                <button class="btn  btn-small btn-ghost"> Résumé</button>
-                                <button class="btn  btn-small btn-ghost"> Portfolio</button>
-                                <!-- <button class="btn  btn-small btn-ghost"> Articles</button> -->
+                                <a class="btn  btn-small btn-ghost btn-active"> About </a>
+                                <a class="btn  btn-small btn-ghost"> Résumé</a>
+                                <a class="btn  btn-small btn-ghost"> Portfolio</a>
+                                <!-- <a class="btn  btn-small btn-ghost"> Articles</a> -->
                             </div>
                         </div>
                     </div>
-                    <div class="container-responsive container-flush-both-xs  scroll-area">
-                        <div class="photo circle bg-primary square-96px center-block line-offset-8 "></div>
+                    <div class="container-responsive container-flush-both-xs  scroll-area  flex-none-xs">
+                        <div class="photo circle bg-primary square-96px center-block line-offset-8 ">
+                            <img src="../images/photos/profile-11-2015.jpg">
+                        </div>
                         <h4 class="center-block text-center line-offset-1">Betsy Dupuis</h4>
                         <h2 class="center-block text-center">Designer / Developer Hybrid</h2>
                     </div>
                     <div class="toolbar scroll area-fixed ">
                         <div class="row row-center">
                             <div class="col xs-12 sm-6 md-4 btn-group center">
-                                <button class="btn  btn-small btn-ghost btn-active"> Twitter </button>
-                                <button class="btn  btn-small btn-ghost"> Codepen</button>
-                                <button class="btn  btn-small btn-ghost"> Github</button>
+                                <a class="btn  btn-small btn-ghost btn-active"> Twitter </a>
+                                <a class="btn  btn-small btn-ghost"> Codepen</a>
+                                <a class="btn  btn-small btn-ghost"> Github</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Grid Wall -->
-            <div class="col xs-12 sm-10 fill scroll-area">
-                <div class="row">
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:#999">
+            <div class="col col-flush-right  xs-12 sm-10 fill scroll-area  flex-none-xs">
+                <div class="row row-no-gutters grid-wall">
+<!--                     <div class="col  xs-6 col sm-4 md-3 col-transition  thumbnail-group"><img src="../images/photos/thumb-template-2.jpg">
+                        <div class="thumbnail-group-caption">
+                            <h3>Flower Logo Sketch</h3>
+                            <h4>Portfolio Development</h4>
+                            <a class="btn  btn-small btn-ghost"> View</a>
+                        </div>
+                    </div> -->
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template.jpg">
                     </div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:blue"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:#999">
-                    </div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:blue"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:green;"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:#eee;"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:blue"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:#999">
-                    </div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:blue"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:green;"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:green;"></div>
-                    <div class="col  xs-6 col sm-4  md-3 col-transition "
-                      style="height: 400px;background:#eee;"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
+                    <div class="col  xs-6 col sm-4  md-3 col-transition "><img src="../images/photos/thumb-template-2.jpg"></div>
                 </div>
             </div>
         </div>
@@ -107,7 +103,7 @@
                 (b[l].q = b[l].q || []).push(arguments)
             });
         b[l].l = +new Date;
-        e = o.createElement(i);
+        e = o.createElement(i)
         r = o.getElementsByTagName(i)[0];
         e.src = 'https://www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e, r)
