@@ -21,6 +21,7 @@
       href="../node_modules/normalize.css/normalize.css">
     <link rel="stylesheet"
       href="../sass/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -32,34 +33,44 @@
         <div class="row fill">
             <div class="col xs-12 sm-7 bg-white ">
                 <div class="container-scroll-area fill">
-                    <div class="container-responsive scroll-area-fixed">
+                    <div class="scroll-area-fixed">
                         <div class="row row-padding row-center scroll-area-fixed">
                             <div class="col xs-12 lg-8 btn-group center">
-                                <button class="btn  btn-small btn-ghost btn-active"> About </button>
-                                <a href="resume.html" class="btn  btn-small btn-ghost"> Résumé</a>
+                                <a href="index.html" class="btn  btn-small btn-ghost btn-active"> About </a>
+                                <a href="resume.html"
+                                  class="btn  btn-small btn-ghost"> Résumé</a>
                                 <a href="portfolio.html"
                                   class="btn  btn-small btn-ghost"> Portfolio</a>
                                 <button class="btn  btn-small btn-ghost"> Articles</button>
                             </div>
                         </div>
                     </div>
-                    <div class="container-responsive container-flush-both-xs  scroll-area flex-none-xs">
-                        <div class="photo circle bg-friendship-red square-96px center-block line-offset-8 "></div>
-                        <h4 class="center-block text-center line-offset-1">Betsy Dupuis</h4>
-                        <h2 class="center-block text-center">Designer / Developer Hybrid</h2>
-                        <div class="row col center-block md-12 lg-9 line-offset-2">Bacon ipsum dolor sit amet beef shoulder frankfurter brisket short loin. Capicola shankle pork belly, turducken chuck doner leberkas short loin. Boudin strip steak pork loin shankle flank spare ribs shoulder. Ball tip leberkas beef shank jerky beef ribs tongue capicola short loin pork belly filet mignon ribeye pork doner.</div>
+                    <div class="container-flush-both-xs  scroll-area flex-none-xs">
+                        <div class="photo circle bg-primary square-96px center-block line-offset-8 ">
+                            <img src="../images/photos/profile-11-2015.jpg">
+                        </div>
+                        <h4 class="center-block text-center line-offset-1 font-display text-bold">Betsy Dupuis</h4>
+                        <p class="center-block text-center small">Designer / Developer Hybrid</p>
+                        <div class="row col center-block md-12 lg-9 line-offset-2">
+                            <p>Hello,</p>
+                            <p>I'm Betsy Dupuis. I'm a designer and front-end developer in Austin, TX.</p>
+                            <p>My first introduction to design was through my love of photography, learning graphics editing, composition and layout, and art direction.</p>
+                            <p>Regards,</p>
+                            <p class="text-right">Betsy Dupuis</p>
+                        </div>
                     </div>
-                    <div class="toolbar scroll area-fixed ">
+                    <div class="toolbar scroll area-fixed overlap-bg-top">
                         <div class="row row-center">
                             <div class="col xs-12 sm-6 md-4 btn-group center">
-                                <button class="btn  btn-small btn-ghost btn-active"> Twitter </button>
-                                <button class="btn  btn-small btn-ghost"> Codepen</button>
-                                <button class="btn  btn-small btn-ghost"> Github</button>
+                                <a class="btn  btn-small btn-ghost"> <i class="fa fa-twitter fa-2x"></i> </a>
+                                <a class="btn  btn-small btn-ghost"> <i class="fa fa-codepen fa-2x"></i> </a>
+                                <a class="btn  btn-small btn-ghost"> <i class="fa fa-github fa-2x"></i> </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col timeline"></div>
             <!-- Grid Wall -->
             <div class="col col-flush-right  xs-12 sm-5 scroll-area  flex-none-xs">
