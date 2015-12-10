@@ -1,0 +1,22 @@
+/* http://www.cssmojo.com/line-clamp_for_non_webkit-based_browsers/ */
+.truncate-line-1 {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.truncate-line-2 {
+    display: -webkit-box; //*  Must be -webkit-box not display: flex;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncate-line-3 {
+    display: -webkit-box; //*  Must be -webkit-box not display: flex;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
