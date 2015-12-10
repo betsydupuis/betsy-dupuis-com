@@ -47,6 +47,11 @@
     }
 }
 
+.btn-primary {
+    background: $friendship-red;
+    color: #fff;
+}
+
 // Button sizes
 .btn-small {
     padding: 3px 6px;
@@ -99,4 +104,15 @@
             border-bottom-left-radius: 0px;
         }
     }
+}
+
+//===========================
+// Helpers
+//------------------------------------------------
+//
+//===========================
+
+.btn-block {
+    display: block;
+    width: auto;
 }

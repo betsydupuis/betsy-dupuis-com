@@ -17,3 +17,22 @@
 .toolbar {
     background: #fff;
 }
+
+
+
+// XS Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (max-width: $screen-sm-min - 1px) {
+
+    .toolbar-responsive {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+}

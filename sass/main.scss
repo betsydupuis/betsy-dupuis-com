@@ -17,6 +17,7 @@
 @import "_scaffolding/filling";
 @import "_scaffolding/typography";
 @import "_scaffolding/colors";
+@import "_scaffolding/pinning";
 
 //===========================
 // Components
@@ -28,6 +29,11 @@
 @import "_components/timelines";
 @import "_components/design-elements";
 @import "_components/thumbnails";
+
+//===========================
+// Effects
+//===========================
+@import "_effects/overlap";
 
 //===========================
 // Helpers

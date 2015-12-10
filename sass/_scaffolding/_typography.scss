@@ -3,15 +3,32 @@
 //------------------------------------------------
 //
 //===========================
+// Typography
+$scale-1: 1; // 1.6
+$scale-2: 18 / 16; // 1.125
+$scale-3: 21 / 16; // 1.3125
+$scale-3-5: 24 / 16; // 1.3125
+$scale-4: 30 / 16; // 1.875
+$scale-5: 36 / 16; // 2.25
+$scale-6: 48 / 16; // 3
+$scale-7: 64 / 16; // 3
+$scale-8: 72 / 16; // 3
+$font-size-base: 16 / 10;
+
+html {
+    font-size: 100%;
+}
 
 body {
+    font-family: 'Source Sans Pro', "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+    font-size: $scale-1 + rem;
+    -webkit-font-smoothing: antialiased;
     font-family: $base-font-family;
-    font-size: 100%;
     color: #333;
 }
 
 //  Headers
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: 600;
 }
@@ -39,396 +56,317 @@ h3 {
 // Bootstrap imported for base styles
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 // Font Families
-$font-family-source-serif: 'https://s3.amazonaws.com/bdcom/webfonts/aleo/';
-$font-family-source-script: 'https://s3.amazonaws.com/bdcom/webfonts/begining-yoga/';
-$font-family-source-serif-light: #{$font-family-source-serif}#{'light/'};
-$font-family-source-serif-bold: #{$font-family-source-serif}#{'begining-yoga/'};
+$font-family-source-serif: "https://s3.amazonaws.com/bdcom/webfonts/aleo/";
+$font-family-source-script: "https://s3.amazonaws.com/bdcom/webfonts/begining-yoga/";
+$font-family-source-serif-light: #{$font-family-source-serif}#{"light/"};
+$font-family-source-serif-bold: #{$font-family-source-serif}#{"begining-yoga/"};
 
 @font-face {
     font-family: 'aleo';
-  src: url('#{$font-family-source-serif-light}Aleo-Light-webfont.eot');
-    src: url('#{$font-family-source-serif-light}Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$font-family-source-serif-light}Aleo-Light-webfont.woff') format('woff'),
-         url('#{$font-family-source-serif-light}Aleo-Light-webfont.ttf') format('truetype'),
-         url('#{$font-family-source-serif-light}Aleo-Light-webfont.svg#aleolight') format('svg');
+    src: url("#{$font-family-source-serif-light}Aleo-Light-webfont.eot");
+    src: url("#{$font-family-source-serif-light}Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"), url("#{$font-family-source-serif-light}Aleo-Light-webfont.woff") format("woff"), url("#{$font-family-source-serif-light}Aleo-Light-webfont.ttf") format("truetype"), url("#{$font-family-source-serif-light}Aleo-Light-webfont.svg#aleolight") format("svg");
     font-weight: 300;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'aleobold';
-    src: url('#{$font-family-source-serif-bold}Aleo-Bold-webfont.eot');
-    src: url('#{$font-family-source-serif-bold}Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$font-family-source-serif-bold}Aleo-Bold-webfont.woff') format('woff'),
-         url('#{$font-family-source-serif-bold}Aleo-Bold-webfont.ttf') format('truetype'),
-         url('#{$font-family-source-serif-bold}Aleo-Bold-webfont.svg#aleobold') format('svg');
+    src: url("#{$font-family-source-serif-bold}Aleo-Bold-webfont.eot");
+    src: url("#{$font-family-source-serif-bold}Aleo-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("#{$font-family-source-serif-bold}Aleo-Bold-webfont.woff") format("woff"), url("#{$font-family-source-serif-bold}Aleo-Bold-webfont.ttf") format("truetype"), url("#{$font-family-source-serif-bold}Aleo-Bold-webfont.svg#aleobold") format("svg");
     font-weight: 700;
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'beginning-yoga';
-    src: url('#{$font-family-source-script}beginning_yoga-webfont.eot');
-    src: url('#{$font-family-source-script}beginning_yoga-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$font-family-source-script}beginning_yoga-webfont.woff2') format('woff2'),
-         url('#{$font-family-source-script}beginning_yoga-webfont.woff') format('woff'),
-         url('#{$font-family-source-script}beginning_yoga-webfont.ttf') format('truetype'),
-         url('#{$font-family-source-script}beginning_yoga-webfont.svg#beginning_yogaregular') format('svg');
+    src: url("#{$font-family-source-script}beginning_yoga-webfont.eot");
+    src: url("#{$font-family-source-script}beginning_yoga-webfont.eot?#iefix") format("embedded-opentype"), url("#{$font-family-source-script}beginning_yoga-webfont.woff2") format("woff2"), url("#{$font-family-source-script}beginning_yoga-webfont.woff") format("woff"), url("#{$font-family-source-script}beginning_yoga-webfont.ttf") format("truetype"), url("#{$font-family-source-script}beginning_yoga-webfont.svg#beginning_yogaregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
-// Typography
-$scale-1: 1; // 1.6
-$scale-2: 18 / 16; // 1.125
-$scale-3: 21 / 16; // 1.3125
-$scale-3-5: 24 / 16; // 1.3125
-$scale-4: 30 / 16; // 1.875
-$scale-5: 36 / 16; // 2.25
-$scale-6: 48 / 16; // 3
-$scale-7: 64 / 16; // 3
-$scale-8: 72 / 16; // 3
-$font-size-base: 16/10;
-
-html {
-  font-size: 100%;
-}
-
-body{
-  font-family: 'Source Sans Pro', "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-  font-size: $scale-1 + rem;
-  -webkit-font-smoothing: antialiased;
-  padding-bottom: 24px;
-}
 h1, h2, h3, h4, h6 {
-  margin-top: 0; // Override Bootstrap
+    margin-top: 0;
+
+    // Override Bootstrap
 }
+
 h1 {
-    font-size:$scale-6 + rem; // 3rem
-    line-height:(48 / 48) + em; // 1rem
-    margin-bottom:(24 / 48) + em; //.5rem
+    font-size: $scale-6 + rem;
+
+    // 3rem
+    line-height: (48 / 48) + em;
+
+    // 1rem
+    margin-bottom:( 24 / 48) + em;
+
+    //.5rem
 }
 
 h2 {
-    font-size:$scale-5 + rem; // 2.25rem
-    line-height:(48 / 36) + em; // 1.333333333333333rem
-    margin-bottom:(24 / 36) + em; //.6666666666666667rem
+    font-size: $scale-5 + rem;
+
+    // 2.25rem
+    line-height: (48 / 36) + em;
+
+    // 1.333333333333333rem
+    margin-bottom:( 24 / 36) + em;
+
+    //.6666666666666667rem
 }
 
 h3 {
-    font-size:$scale-4 + rem; // 1.5rem
-    line-height:(24 / 24) + em; // 1rem
-    margin-bottom:(24 / 24) + em; // 1rem
+    font-size: $scale-4 + rem;
+
+    // 1.5rem
+    line-height: (24 / 24) + em;
+
+    // 1rem
+    margin-bottom:( 24 / 24) + em;
+
+    // 1rem
+    font-family: "aleo";
 }
 
 h4 {
-    font-size:$scale-3 + rem; // 1.3125rem
-    line-height:(24 / 21) + em; // 1.142857142857143rem
-    margin-bottom:(24 / 21) + em; //1.142857142857143rem
+    font-size: $scale-3 + rem;
+
+    // 1.3125rem
+    line-height: (24 / 21) + em;
+
+    // 1.142857142857143rem
+    margin-bottom:( 24 / 21) + em;
+
+    //1.142857142857143rem
 }
 
 h5 {
-    font-size:$scale-2 + rem; // 1.125rem
+    font-size: $scale-2 + rem;
+
+    // 1.125rem
     font-weight: bold;
-    line-height:(24 / 18) + em; // 1.333333333333333rem
-    margin-bottom:(24 / 16) + em; //1.333333333333333rem
+    line-height: (24 / 18) + em;
+
+    // 1.333333333333333rem
+    margin-bottom:( 24 / 16) + em;
+
+    //1.333333333333333rem
 }
+
 h6 {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 h6, p {
-    font-size:$scale-1 + rem; // 1rem
-    line-height:(24 / 16) + em; // 1.5rem
-    margin-bottom:(24 / 16) + em; // 1.5rem
+    font-size: $scale-1 + rem;
+
+    // 1rem
+    line-height: (24 / 16) + em;
+
+    // 1.5rem
+    margin-bottom:( 24 / 16) + em;
+
+    // 1.5rem
 }
 
-// Components
-.btn-group {
-  > .btn-link {
-    display: inline-block;
-    margin-right: 24px;
-  }
-}
 
-a, a:visited, .btn-link {
-  color: #ff5400;
-  font-weight: 700;
-  &:active, &:focus, &:hover{
-    color: #ff8d04;
-    text-decoration: none;
-  }
-}
-.icon-arrow-right:after{
- content: " →";
- vertical-align: middle;
-}
-.icon-arrow-down:after{
- content: " ↓";
- vertical-align: middle;
-}
-summary{
-  margin-bottom: 48px;
-}
-.footer{
-  background: #ff5400;
-  color: #fff;
-  min-height:12px;
-  margin-top: 24px;
-  position:  fixed;
-  z-index: 999;
-  bottom: 0;
-  width: 100%;
-  padding: 6px 12px;
-  a, a:visited, .btn-link {
-    color: #fff;
-    &:active, &:focus, &:hover{
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-}
-
-// Tags
-$red: #db1700;
-$blue: #35a5d0;
-$yellow: #ffb70b;
-$purple: #7e4784;
-$green: #b7d42b;
-
-.label-group{
-  > .label{
-    margin-right: 6px;
-  }
-}
-.label {
-  border-radius: 0;
-  background-color: transparent;
-  color: #000;
-  border-style: solid;
-  border-width: 4px;
-  display: inline-block;
-  font-size: $scale-2 * 1rem;
-  margin-bottom: ($scale-1 + 1rem)/4;
-  &:empty{
-    display: inline-block;
-  }
-}
-.label-design {
-  color: $purple;
-  &:before {
-    content: 'Design';
-  }
-}
-.label-ux {
-  color: $green;
-  &:before {
-    content: 'UX';
-  }
-}
-.label-html {
-  color: $red;
-  &:before {
-    content: 'HTML';
-  }
-}
-.label-css {
-  color: $blue;
-  &:before {
-    content: 'CSS';
-  }
-}
-.label-less {
-  color: $blue;
-  &:before {
-    content: 'Less CSS';
-  }
-}
-.label-php {
-  color: $purple;
-  &:before {
-    content: 'PHP Templating';
-  }
-}
-.label-responsive {
-  color: $red;
-  &:before {
-    content: 'Responsive';
-  }
-}
-.label-html-email {
-  color: $red;
-  &:before {
-    content: 'HTML Email';
-  }
-}
-
-.label-js, .label-javascript {
-  color: $yellow;
-  &:before {
-    content: 'JavaScript';
-  }
-}
-.icon-group {
-  > .fa {
-    padding-left: 12px;
-    &:first-child {
-      padding-left: 0;
-    }
-  }
-}
-.thumbnail-group {
-  display: inline-block;
-  vertical-align: top;
-  .btn {
-    display: block;
-    margin: 1rem auto;
-  }
-}
-.image-behind {
-  margin-left: -100px;
-  position:relative;
-  z-index:-10;
-}
-.image-shadow {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 4px 4px 0 rgba(0, 0, 0, 0.06);
-    border: 1px solid #eee;
-}
 // Helpers - Typogrpahy
 .text-normal {
-  font-weight: normal;
+    font-weight: normal;
 }
+
 .text-light {
-  font-weight: 300;
+    font-weight: 300;
 }
+
 .font-display {
-  font-family: "aleo";
-  font-weight: 300;
-  &.text-bold, b{
-    font-weight: 700;
-  }
+    font-family: "aleo";
+    font-weight: 300;
+
+    &.text-bold, b {
+        font-weight: 700;
+    }
 }
 
 .font-script {
-  font-family: 'beginning-yoga';
+    font-family: 'beginning-yoga';
 }
 
 // Helpers - Typography
-.margin-bottom-0{
-  margin-bottom: 0 !important;
-}
-.margin-bottom-inset-third{
-  margin-top: (24/72) * -1em !important;
-}
-.v-align-middle {
-  vertical-align: middle;
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
 }
 
+.margin-bottom-inset-third {
+    margin-top: (24 / 72 * -1em) !important;
+}
+
+.v-align-middle {
+    vertical-align: middle;
+}
 
 .text-scale-8 {
-    font-size:$scale-8 + em; // 3rem
-    line-height:(72 / 72) + em; // 1rem
-    margin-bottom:(24 / 48) + em; //.5rem
+    font-size: $scale-8 + em;
+
+    // 3rem
+    line-height: 72 / 72 + em;
+
+    // 1rem
+    margin-bottom: 24 / 48 + em;
+
+    //.5rem
 }
+
 .text-scale-6 {
-    font-size:$scale-6 + em; // 3rem
-    line-height:(48 / 48) + em; // 1rem
-    margin-bottom:(24 / 48) + em; //.5rem
+    font-size: $scale-6 + em;
+
+    // 3rem
+    line-height: 48 / 48 + em;
+
+    // 1rem
+    margin-bottom: 24 / 48 + em;
+
+    //.5rem
 }
 
 .text-scale-5 {
-    font-size:$scale-5 + em; // 2.25rem
-    line-height:(48 / 36) + em; // 1.333333333333333rem
-    margin-bottom:(24 / 36) + em; //.6666666666666667rem
+    font-size: $scale-5 + em;
+
+    // 2.25rem
+    line-height: 48 / 36 + em;
+
+    // 1.333333333333333rem
+    margin-bottom: 24 / 36 + em;
+
+    //.6666666666666667rem
 }
 
 .text-scale-4 {
-    font-size:$scale-4 + em; // 1.5rem
-    line-height:(24 / 24) + em; // 1rem
-    margin-bottom:(24 / 24) + em; // 1rem
+    font-size: $scale-4 + em;
+
+    // 1.5rem
+    line-height: 24 / 24 + em;
+
+    // 1rem
+    margin-bottom: 24 / 24 + em;
+
+    // 1rem
 }
 
 .text-scale-3 {
-    font-size:$scale-3 + em; // 1.3125rem
-    line-height:(24 / 21) + em; // 1.142857142857143rem
-    margin-bottom:(24 / 21) + em; //1.142857142857143rem
+    font-size: $scale-3 + em;
+
+    // 1.3125rem
+    line-height: 24 / 21 + em;
+
+    // 1.142857142857143rem
+    margin-bottom: 24 / 21 + em;
+
+    //1.142857142857143rem
 }
 
 .text-scale-2 {
-    font-size:$scale-2 + em; // 1.125rem
-    line-height:(24 / 18) + em; // 1.333333333333333rem
-    margin-bottom:(24 / 18) + em; //1.333333333333333rem
+    font-size: $scale-2 + em;
+
+    // 1.125rem
+    line-height: 24 / 18 + em;
+
+    // 1.333333333333333rem
+    margin-bottom: 24 / 18 + em;
+
+    //1.333333333333333rem
 }
 
-.text-scale-1{
-    font-size:$scale-1 + rem; // 1rem
-    line-height:(24 / 16) + em; // 1.5rem
-    margin-bottom:(24 / 16) + em; // 1.5rem
+.text-scale-1 {
+    font-size: $scale-1 + rem;
+
+    // 1rem
+    line-height: 24 / 16 + em;
+
+    // 1.5rem
+    margin-bottom: 24 / 16 + em;
+
+    // 1.5rem
 }
-.text-color-primary{
-  color: #ff5400 !important;
+
+.text-color-primary {
+    color: #ff5400 !important;
 }
+
 .center-contents-y {
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  padding-bottom: 24px;
-      .center-y {
+    display: -webkit-box;
+
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+
+    /* NEW - Chrome */
+    display: flex;
+
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    padding-bottom: 24px;
+
+    .center-y {
         margin-top: auto;
         margin-bottom: auto;
-      }
+    }
 }
+
 // Media Queries
 
-
 @media screen and (min-height: 24 * 30 * 1px) {
-      // Helpers - Layout
+    // Helpers - Layout
     .center-contents-y {
-      height: (24 * 30 * 1px) - 48;
+        height: 24 * 30 * 1px - 48;
     }
 }
 
 @media screen and (min-height: 24 * 25 * 1px) {
-      // Helpers - Layout
+    // Helpers - Layout
     .center-contents-y {
-      height: (24 * 25 * 1px) - 48;
+        height: 24 * 25 * 1px - 48;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) and (min-height: 24 * 20 * 1px) {
-      // Helpers - Layout
+    // Helpers - Layout
     .center-contents-y {
-      height: (24 * 20 * 1px) - 48;
+        height: 24 * 20 * 1px - 48;
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media screen and (max-width: 767px) and (max-height: 24 * 15 * 1px) {
-  .text-scale-down-xs{
-    font-size: (1 / $scale-2) + em;
-  }
-      // Helpers - Layout
-  .center-contents-y {
-    height: (24 * 15 * 1px) - 48;
-  }
+    .text-scale-down-xs {
+        font-size: 1 / $scale-2 + em;
+    }
+
+    // Helpers - Layout
+    .center-contents-y {
+        height: 24 * 15 * 1px - 48;
+    }
 }
 
 /* Landscape phones and down */
-@media  screen and (max-width: 480px) and (max-height: 24 * 10 * 1px) {
-      // Helpers - Layout
-/*    .center-contents-y {
-      height: (24 * 15 * 1px) - 48;
-      padding-bottom: 24px;
-    }*/
+@media screen and (max-width: 480px) and (max-height: 24 * 10 * 1px) {
+    // Helpers - Layout
+    /*    .center-contents-y {
+          height: (24 * 15 * 1px) - 48;
+          padding-bottom: 24px;
+        }*/
 }
 
 @media screen and (max-width: 480px) {
-  .text-scale-down-xs{
-    font-size: (1 / $scale-3) + em;
-  }
+    .text-scale-down-xs {
+        font-size: 1 / $scale-3 + em;
+    }
 }
 
 // Special Typography
