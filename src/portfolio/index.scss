@@ -1,0 +1,41 @@
+//===========================
+// Variables and mixins
+//===========================
+@import "sass/variables/color-scheme-mid-century";
+@import "sass/variables";
+@import "sass/_mixins/grid";
+@import "sass/_mixins/typography-truncate";
+
+
+//===========================
+// Scaffolding
+//===========================
+@import "sass/_components/animations";
+@import "sass/_scaffolding/page-default";
+@import "sass/_scaffolding/spacing";
+@import "sass/_scaffolding/grid-flex";
+@import "sass/_scaffolding/filling";
+@import "sass/_scaffolding/typography";
+@import "sass/_scaffolding/colors";
+@import "sass/_scaffolding/pinning";
+
+//===========================
+// Components
+//===========================
+@import "sass/_components/icons";
+@import "sass/_components/navigation";
+@import "sass/_components/buttons";
+@import "sass/_components/cards";
+@import "sass/_components/timelines";
+@import "sass/_components/design-elements";
+@import "sass/_components/thumbnails";
+
+//===========================
+// Effects
+//===========================
+@import "sass/_effects/overlap";
+
+//===========================
+// Helpers
+//===========================
+@import "sass/_components/helpers"; // Important that this is last for overrides.
