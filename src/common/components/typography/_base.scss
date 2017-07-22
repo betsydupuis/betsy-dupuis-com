@@ -3,14 +3,17 @@
 //------------------------------------------------
 //
 //===========================
+$default-font-size: 16;
+$base-font-size: 12;
+
 html {
-    font-size: 100%;
+    font-size: $base-font-size / $default-font-size * 100%;
 }
 
 body,
 .text-body {
     font-family: $base-font-family;
-    font-size: $scale-1 + rem;
+    font-size: $default-font-size/$base-font-size + rem;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
