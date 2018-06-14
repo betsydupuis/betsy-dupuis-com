@@ -1,0 +1,10 @@
+.grid-wall {
+    @extend .row;
+
+    >.gridwall-item,
+    >div,
+    >li {
+        flex: 0 0 25%;
+        @extend .col;
+    }
+}

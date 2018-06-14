@@ -1,0 +1,26 @@
+.squeeze-y {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.squeeze-x {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.fit {
+    flex: 1 1 0%;
+}
+
+.fill {
+    flex: 1 1 auto;
+}
+
+.img-fit {
+    max-width: 100%;
+    height: auto;
+}
