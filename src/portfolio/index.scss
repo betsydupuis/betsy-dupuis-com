@@ -1,11 +1,17 @@
 //===========================
 // Variables and mixins
 //===========================
-@import "sass/variables/color-scheme-mid-century";
+html,
+body {
+    height: 100%;
+}
+
+@import "sass/variables/_color-scheme-mid-century.scss";
 @import "sass/variables";
-@import "sass/_mixins/grid";
+// @import "sass/_mixins/grid";
 @import "sass/_mixins/typography-truncate";
 
+@import "../common/common.scss";
 
 //===========================
 // Scaffolding
@@ -13,23 +19,23 @@
 @import "sass/_components/animations";
 @import "sass/_scaffolding/page-default";
 @import "sass/_scaffolding/spacing";
-@import "sass/_scaffolding/grid-flex";
-@import "sass/_scaffolding/filling";
-@import "sass/_scaffolding/typography";
+// @import "sass/_scaffolding/grid-flex";
+// @import "sass/_scaffolding/filling";
+// @import "sass/_scaffolding/typography";
 @import "sass/_scaffolding/colors";
 @import "sass/_scaffolding/pinning";
 
 //===========================
 // Components
 //===========================
-@import "sass/_components/icons";
-@import "sass/_components/navigation";
+// @import "sass/_components/icons";
+// @import "sass/_components/navigation";
 @import "sass/_components/buttons";
-@import "sass/_components/cards";
-@import "sass/_components/timelines";
-@import "sass/_components/design-elements";
+// @import "sass/_components/cards";
+// @import "sass/_components/timelines";
+// @import "sass/_components/design-elements";
 @import "sass/_components/thumbnails";
-
+@import "components/_components.scss";
 //===========================
 // Effects
 //===========================
@@ -38,4 +44,5 @@
 //===========================
 // Helpers
 //===========================
+@import "sass/colors/_colors.scss";
 @import "sass/_components/helpers"; // Important that this is last for overrides.

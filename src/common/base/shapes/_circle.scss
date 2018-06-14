@@ -5,3 +5,9 @@
 .circle {
     @include circle;
 }
+
+.outline-gray {
+    border: 2px solid #ccc;
+    padding: 6px;
+    background: transparent;
+}

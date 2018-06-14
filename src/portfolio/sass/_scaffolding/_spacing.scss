@@ -5,9 +5,21 @@
 .line-offset-1 {
     margin-top: $base-ratio * 1px;
 }
+
 .line-offset-2 {
     margin-top: $base-ratio * 2px;
 }
+
 .line-offset-8 {
     margin-top: $base-ratio * 8px;
 }
+
+@mixin line-offset-set ($count) {
+    @for $i from 1 through $count {
+        .line-offset-#{$i} {
+            margin-top: $base-ratio * $i + px;
+        }
+    }
+}
+
+@include line-offset-set(12);

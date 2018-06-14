@@ -2,10 +2,12 @@
     overflow: auto;
 
     &-y {
+        @extend .scrollable;
         overflow-x: hidden;
     }
 
     &-x {
+        @extend .scrollable;
         overflow-y: hidden;
     }
 }
@@ -14,11 +16,27 @@
     overflow: scroll;
 
     &-y {
+        @extend .scrollbar;
         overflow-x: hidden;
     }
 
     &-x {
-    	padding-bottom: 16px;
+        @extend .scrollbar;
+        padding-bottom: 16px;
         overflow-y: hidden;
+    }
+}
+
+.scroll {
+
+    &-y-off {
+        overflow-y: hidden;
+    }
+
+    &-x-off {
+        overflow-x: hidden;
+    }
+    &-off {
+        overflow: hidden;
     }
 }

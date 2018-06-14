@@ -1,0 +1,89 @@
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-wine {
+    background-color: #834680;
+    &-light {
+        background-color: lighten( #834680, 25%);
+    }
+}
+
+.bg-cadillac-pink {
+    background-color: #d01b58;
+    &-light {
+        background-color: lighten( #d01b58, 20%);
+    }
+}
+
+.bg-friendship-red {
+    background-color: #da4205;
+    &-light {
+        background-color: lighten( #da4205, 20%);
+    }
+}
+
+.bg-dreamsicle-orange {
+    background-color: #ff8d04;
+    &-light {
+        background-color: lighten( #ff8d04, 20%);
+    }
+}
+
+.bg-skyline-blue {
+    background-color: #028fc4;
+    &-light {
+        background-color: lighten( #028fc4, 20%);
+    }
+}
+
+.bg-stoplight-green {
+    background-color: #64dd17;
+    &-light {
+        background-color: lighten( #64dd17, 20%);
+    }
+}
+
+$light-gray: #edeff1;
+
+.bg-light-gray {
+    background-color: $light-gray;
+    &-light {
+        background-color: lighten( #edeff1, 75%);
+    }
+}
+
+.border-light-gray {
+    border: 1px solid $light-gray;
+}
+
+.border-gray {
+    border: 1px solid darken($light-gray, 10%);
+}
+.text-wine {
+    color: #834680;
+}
+
+.text-cadillac-pink {
+    color: #d01b58;
+}
+
+.text-friendship-red {
+    color: #da4205;
+}
+
+.text-dreamsicle-orange {
+    color: #ff8d04;
+}
+
+.text-skyline-blue{
+    color: #028fc4;
+}
+
+.text-stoplight-green {
+    color: #64dd17;
+}
+
+.text-light-gray {
+    color: #edeff1;
+}

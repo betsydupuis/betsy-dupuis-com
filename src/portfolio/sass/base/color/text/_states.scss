@@ -1,0 +1,16 @@
+@mixin link ($name, $color, $hover-color) {
+
+    .link-#{$name} {
+
+        color: $color;
+         :visited,
+        {
+            color: #fff;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
