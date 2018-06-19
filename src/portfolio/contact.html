@@ -41,8 +41,12 @@
 
           <div class="container-fluid container-center-content md-fixed-7 xs-h-12">
             <h2>Drop me a line.</h2>
-            <a href="mailto:hello@betsydupuis.com"><h1>hello@betsydupuis.com</h1></a>
-            <h2>Or connect with me on social media.</h2>
+            <a href="mailto:hello@betsydupuis.com">
+                <h1><span class="text-scale-down-sm">hello@betsydupuis.com</span></h1>
+            </a>
+            <h2>
+                <span class="text-scale-down-sm">Or connect with me on social media.</span>
+            </h2>
             <div class="row row-gutter text-scale-down-sm xs-hide sm-flex">
                 <a  class="btn btn-link-default"
                     href="https://github.com/betsydupuis"
@@ -68,5 +72,20 @@
           </div>
     </div>
 </body>
-
+<script>
+(function(b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l;
+    b[l] || (b[l] =
+        function() {
+            (b[l].q = b[l].q || []).push(arguments)
+        });
+    b[l].l = +new Date;
+    e = o.createElement(i)
+    r = o.getElementsByTagName(i)[0];
+    e.src = 'https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e, r)
+}(window, document, 'script', 'ga'));
+ga('create', 'UA-36824023-1', 'auto');
+ga('send', 'pageview');
+</script>
 </html>
