@@ -16,6 +16,9 @@ $link-color-hover: #ff8d04;
         margin-left: 0.75em;
     }
 }
+.btn-image {
+    @include btn-behavior;
+}
 
 // Button sizes
 .btn-sm {
@@ -106,3 +109,4 @@ a.btn-link-default,
 .btn-link-default {
     @include colorize-link(#000, #333);
 }
+
