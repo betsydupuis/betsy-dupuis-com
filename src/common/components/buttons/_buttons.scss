@@ -16,7 +16,8 @@ $link-color-hover: #ff8d04;
         margin-left: 0.75em;
     }
 }
-.btn-image {
+.btn-image,
+.btn-img {
     @include btn-behavior;
 }
 
