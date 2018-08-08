@@ -23,3 +23,15 @@
 }
 
 @include line-offset-set(12);
+
+.row-small-gutter {
+	$small-gutter-width: ($base-ratio  / 2) * 1px;
+
+	margin-left: $small-gutter-width * -1;
+	margin-right: $small-gutter-width * -1;
+
+	> .col {
+		padding-right: $small-gutter-width;
+		padding-left: $small-gutter-width;
+	}
+}
