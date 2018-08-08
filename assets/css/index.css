@@ -3044,7 +3044,8 @@ a {
   .btn + .btn {
     margin-left: 0.75em; }
 
-.btn-image {
+.btn-image,
+.btn-img {
   display: inline-block;
   white-space: nowrap;
   touch-action: manipulation;
@@ -5652,6 +5653,15 @@ body * {
 
 .line-offset-12 {
   margin-top: 144px; }
+
+.row-small-gutter {
+  margin-left: -6px;
+  margin-right: -6px; }
+  .row-small-gutter > .col, .grid-wall.row-small-gutter > .gridwall-item,
+  .grid-wall.row-small-gutter > div,
+  .grid-wall.row-small-gutter > li {
+    padding-right: 6px;
+    padding-left: 6px; }
 
 .bg-primary {
   background: #d83704; }
