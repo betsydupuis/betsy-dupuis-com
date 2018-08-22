@@ -39,3 +39,58 @@
     // line-height: (24 / 16) + rem; // 1.5rem
     // margin-bottom: (24 / 16) + rem; // 1.5rem
 }
+
+
+// Text scale up
+
+@mixin text-scale-up($scale-size, $screen-size, $i) {
+    .text-scale-#{$screen-size}-up-#{$i} {
+        font-size: $scale-size + em;
+    }
+}
+@mixin text-scale-down($scale-size, $screen-size, $i) {
+    .text-scale-#{$screen-size}-down-#{$i} {
+        font-size: $scale-size + em;
+    }
+}
+
+@mixin text-scale-up-list ($screen-size) {
+    @include text-scale-up(1, $screen-size, 0)
+    @include text-scale-up($scale-1,  $screen-size, 1)
+    @include text-scale-up($scale-2,  $screen-size, 2)
+    @include text-scale-up($scale-3,  $screen-size, 3)
+    @include text-scale-up($scale-4,  $screen-size, 4)
+    @include text-scale-up($scale-5,  $screen-size, 5)
+    @include text-scale-up($scale-6,  $screen-size, 6)
+}
+@mixin text-scale-down-list ($screen-size) {
+    @include text-scale-down($scale-down-2,  $screen-size, 2)
+    @include text-scale-down($scale-down-3,  $screen-size, 3)
+    @include text-scale-down($scale-down-4,  $screen-size, 4)
+    @include text-scale-down($scale-down-5,  $screen-size, 5)
+    @include text-scale-down($scale-down-6,  $screen-size, 6)
+}
+
+
+@include text-scale-up-list('xs');
+@include text-scale-down-list('xs');
+
+@media (min-width: $breakpoint-sm) {
+    @include text-scale-up-list('sm')
+    @include text-scale-down-list('sm')
+}
+
+@media (min-width: $breakpoint-md) {
+    @include text-scale-up-list('md')
+    @include text-scale-down-list('md')
+}
+
+@media (min-width: $breakpoint-lg) {
+    @include text-scale-up-list('lg')
+    @include text-scale-down-list('lg')
+}
+
+@media (min-width: $breakpoint-xl) {
+    @include text-scale-up-list('xl')
+    @include text-scale-down-list('xl')
+}
