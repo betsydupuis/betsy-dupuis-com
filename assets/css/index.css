@@ -2942,9 +2942,6 @@ a {
 .text-scale-1 {
   font-size: 1.33333rem; }
 
-.text-scale-xs-up-0 {
-  font-size: 1em; }
-
 .text-scale-xs-up-1 {
   font-size: 1.33333em; }
 
@@ -2978,9 +2975,10 @@ a {
 .text-scale-xs-down-6 {
   font-size: 0.25em; }
 
+.text-scale-xs-up-0 {
+  font-size: 1em; }
+
 @media (min-width: 768px) {
-  .text-scale-sm-up-0 {
-    font-size: 1em; }
   .text-scale-sm-up-1 {
     font-size: 1.33333em; }
   .text-scale-sm-up-2 {
@@ -3002,11 +3000,11 @@ a {
   .text-scale-sm-down-5 {
     font-size: 0.33333em; }
   .text-scale-sm-down-6 {
-    font-size: 0.25em; } }
+    font-size: 0.25em; }
+  .text-scale-sm-up-0 {
+    font-size: 1em; } }
 
 @media (min-width: 1024px) {
-  .text-scale-md-up-0 {
-    font-size: 1em; }
   .text-scale-md-up-1 {
     font-size: 1.33333em; }
   .text-scale-md-up-2 {
@@ -3028,11 +3026,11 @@ a {
   .text-scale-md-down-5 {
     font-size: 0.33333em; }
   .text-scale-md-down-6 {
-    font-size: 0.25em; } }
+    font-size: 0.25em; }
+  .text-scale-md-up-0 {
+    font-size: 1em; } }
 
 @media (min-width: 1280px) {
-  .text-scale-lg-up-0 {
-    font-size: 1em; }
   .text-scale-lg-up-1 {
     font-size: 1.33333em; }
   .text-scale-lg-up-2 {
@@ -3054,11 +3052,11 @@ a {
   .text-scale-lg-down-5 {
     font-size: 0.33333em; }
   .text-scale-lg-down-6 {
-    font-size: 0.25em; } }
+    font-size: 0.25em; }
+  .text-scale-lg-up-0 {
+    font-size: 1em; } }
 
 @media (min-width: 1440px) {
-  .text-scale-xl-up-0 {
-    font-size: 1em; }
   .text-scale-xl-up-1 {
     font-size: 1.33333em; }
   .text-scale-xl-up-2 {
@@ -3080,7 +3078,9 @@ a {
   .text-scale-xl-down-5 {
     font-size: 0.33333em; }
   .text-scale-xl-down-6 {
-    font-size: 0.25em; } }
+    font-size: 0.25em; }
+  .text-scale-xl-up-0 {
+    font-size: 1em; } }
 
 .text-uppercase {
   text-transform: uppercase; }
