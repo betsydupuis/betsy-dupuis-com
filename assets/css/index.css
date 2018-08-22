@@ -2942,6 +2942,146 @@ a {
 .text-scale-1 {
   font-size: 1.33333rem; }
 
+.text-scale-xs-up-0 {
+  font-size: 1em; }
+
+.text-scale-xs-up-1 {
+  font-size: 1.33333em; }
+
+.text-scale-xs-up-2 {
+  font-size: 1.5em; }
+
+.text-scale-xs-up-3 {
+  font-size: 1.75em; }
+
+.text-scale-xs-up-4 {
+  font-size: 2.5em; }
+
+.text-scale-xs-up-5 {
+  font-size: 3em; }
+
+.text-scale-xs-up-6 {
+  font-size: 4em; }
+
+.text-scale-xs-down-2 {
+  font-size: 0.66667em; }
+
+.text-scale-xs-down-3 {
+  font-size: 0.57143em; }
+
+.text-scale-xs-down-4 {
+  font-size: 0.4em; }
+
+.text-scale-xs-down-5 {
+  font-size: 0.33333em; }
+
+.text-scale-xs-down-6 {
+  font-size: 0.25em; }
+
+@media (min-width: 768px) {
+  .text-scale-sm-up-0 {
+    font-size: 1em; }
+  .text-scale-sm-up-1 {
+    font-size: 1.33333em; }
+  .text-scale-sm-up-2 {
+    font-size: 1.5em; }
+  .text-scale-sm-up-3 {
+    font-size: 1.75em; }
+  .text-scale-sm-up-4 {
+    font-size: 2.5em; }
+  .text-scale-sm-up-5 {
+    font-size: 3em; }
+  .text-scale-sm-up-6 {
+    font-size: 4em; }
+  .text-scale-sm-down-2 {
+    font-size: 0.66667em; }
+  .text-scale-sm-down-3 {
+    font-size: 0.57143em; }
+  .text-scale-sm-down-4 {
+    font-size: 0.4em; }
+  .text-scale-sm-down-5 {
+    font-size: 0.33333em; }
+  .text-scale-sm-down-6 {
+    font-size: 0.25em; } }
+
+@media (min-width: 1024px) {
+  .text-scale-md-up-0 {
+    font-size: 1em; }
+  .text-scale-md-up-1 {
+    font-size: 1.33333em; }
+  .text-scale-md-up-2 {
+    font-size: 1.5em; }
+  .text-scale-md-up-3 {
+    font-size: 1.75em; }
+  .text-scale-md-up-4 {
+    font-size: 2.5em; }
+  .text-scale-md-up-5 {
+    font-size: 3em; }
+  .text-scale-md-up-6 {
+    font-size: 4em; }
+  .text-scale-md-down-2 {
+    font-size: 0.66667em; }
+  .text-scale-md-down-3 {
+    font-size: 0.57143em; }
+  .text-scale-md-down-4 {
+    font-size: 0.4em; }
+  .text-scale-md-down-5 {
+    font-size: 0.33333em; }
+  .text-scale-md-down-6 {
+    font-size: 0.25em; } }
+
+@media (min-width: 1280px) {
+  .text-scale-lg-up-0 {
+    font-size: 1em; }
+  .text-scale-lg-up-1 {
+    font-size: 1.33333em; }
+  .text-scale-lg-up-2 {
+    font-size: 1.5em; }
+  .text-scale-lg-up-3 {
+    font-size: 1.75em; }
+  .text-scale-lg-up-4 {
+    font-size: 2.5em; }
+  .text-scale-lg-up-5 {
+    font-size: 3em; }
+  .text-scale-lg-up-6 {
+    font-size: 4em; }
+  .text-scale-lg-down-2 {
+    font-size: 0.66667em; }
+  .text-scale-lg-down-3 {
+    font-size: 0.57143em; }
+  .text-scale-lg-down-4 {
+    font-size: 0.4em; }
+  .text-scale-lg-down-5 {
+    font-size: 0.33333em; }
+  .text-scale-lg-down-6 {
+    font-size: 0.25em; } }
+
+@media (min-width: 1440px) {
+  .text-scale-xl-up-0 {
+    font-size: 1em; }
+  .text-scale-xl-up-1 {
+    font-size: 1.33333em; }
+  .text-scale-xl-up-2 {
+    font-size: 1.5em; }
+  .text-scale-xl-up-3 {
+    font-size: 1.75em; }
+  .text-scale-xl-up-4 {
+    font-size: 2.5em; }
+  .text-scale-xl-up-5 {
+    font-size: 3em; }
+  .text-scale-xl-up-6 {
+    font-size: 4em; }
+  .text-scale-xl-down-2 {
+    font-size: 0.66667em; }
+  .text-scale-xl-down-3 {
+    font-size: 0.57143em; }
+  .text-scale-xl-down-4 {
+    font-size: 0.4em; }
+  .text-scale-xl-down-5 {
+    font-size: 0.33333em; }
+  .text-scale-xl-down-6 {
+    font-size: 0.25em; } }
+
 .text-uppercase {
   text-transform: uppercase; }
 
