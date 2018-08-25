@@ -39,4 +39,6 @@ $font-family-source-script: $webfont-source + "/begining-yoga";
 
 .text-serif{
     font-family: $font-serif;
+    word-spacing: 0.25em;
+    letter-spacing: -0.0125em;
 }
