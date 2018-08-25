@@ -18,7 +18,7 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class=" xs-12 xs-h-12 squeeze-y">
+    <div class=" xs-12 xs-h-12 squeeze-y  scrollable-y">
         <!-- container-fluid -->
         <div class="row fit"
          style=" flex-direction: row-reverse">
@@ -26,32 +26,64 @@
             <!-- style="margin-top:72px;margin-bottom:72px" -->
             <div class="gutter vertical-rule xs-hide sm-flex"
              style="border-color:#eee;"></div>
-            <div class="col xs-12 sm-7 lg-6 fill">
+            <div class="col xs-12 sm-7 lg-6 fill  scrollable-y">
                 <div class="row container-fluid row-align-x-right text-right">
                     <!-- <a class="col row-gutter-top text-scale- text-display h5 btn-link"
                         href="how-i-work.html">How I work</a> -->
 
-                    <a class="col row-gutter-top text-scale- text-display h4 btn-link"
+                    <a class="col row-gutter-top  text-display h4 btn-link"
                      href="portfolio">Portfolio</a>
-                    <a class="col row-gutter-top text-scale- text-display h4 btn-link"
+                    <a class="col row-gutter-top  text-display h4 btn-link"
                      href="https://docs.google.com/document/d/1JHW8H9bxEWknH9IpMkYznDJ_w3qiuiiykBxiAMzaWPY/edit#heading=h.bzzpd25aeamy"
                      target="_blank">Resume</a>
-                    <a class="col row-gutter-top text-scale- text-display h4 btn-link"
+                    <a class="col row-gutter-top  text-display h4 btn-link"
                      href="contact">Contact</a>
                 </div>
-                <div class="container-center-content sm-h-12">
-                    <div class="row-gutter-top container-center-content-y xs-fixed-11 sm-fixed-6 md-fixed-7 lg-fixed-6">
-                        <div class="row">
-                            <h2 class="col"
-                             style="margin-bottom: 0">
-                                <span class="text-scale-xs-up-0 text-scale-sm-up-2">Betsy&nbsp;Dupuis</span>
-                            </h2>
-                            <h4 class="col">
-                             <!-- style="color:#4c2c40;" -->
-                                <span class="text-scale-xs-up-0 text-scale-sm-up-2 text-uppercase">Product Designer</span>
-                            </h4>
+                <div class="container-center-content sm-h-12 ">
+                    <div class="row-gutter-top row-gutter container-center-content-y xs-fixed-11 sm-fixed-6 md-11 lg-fixed-7">
+                        <div class="row  row-gutter" style="align-items: center;">
+                            <div class="col" style="padding-left: 0;">
+                                <div class="xs-fixed-3 sm-fixed-2  circle bg-friendship-red" style="border: 3px solid transparent">
+                                    <img class="img-fit xs-12" style="display:block" src="/assets/images/profile2x.jpg">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h2 class=""
+                                 style="margin-bottom: 3px">
+                                    <span class="text-scale-xs-up-0 text-scale-md-up-1 text-serif">Betsy&nbsp;Dupuis</span>
+                                </h2>
+                                <h4 class="" style="margin-bottom: 12px">
+                                 <!-- style="color:#4c2c40;" -->
+                                    <span class="text-scale-xs-up-0 text-scale-md-up-2 text-uppercase">UX Designer</span>
+                                </h4>
+                                <!-- <div class="xs-fixed-5 bg-friendship-red" style="height: 8px;"></div> -->
+                            </div>
                         </div>
-                        <p class="text-scale-lg-up-1" >I design for user experience using user <strong>research</strong>, <strong>wireframes</strong>, and <strong>high-fidelity prototypes</strong> to help products get designed, tested, deployed to users faster.</p>
+                        <p class="text-scale-md-up-1" >
+                            I
+                            <span class="text-nowrap">perform <strong>user research</strong>,</span>
+                            <span class="text-nowrap">sketch <strong>wireframes</strong>, and</span>
+                            <span class="text-nowrap">create <strong>high-fidelity prototypes</strong></span>
+                            to design
+                            <span class="text-nowrap"><u>engaging</u> and <u>useful products</u>.</span>
+                        </p>
+                        <p class="text-scale-md-up-1" >
+                            Check out my design work in my
+                            <a class="text-bold" target="_blank" href="/portfolio">portfolio</a> and on
+                            <a class="text-bold" target="_blank" href="https://dribbble.com/betsydupuis">Dribbble</a>.
+                        </p>
+                        <p class="text-scale-md-up-1" >
+                            Want to get in touch? Say <a class="text-bold" href="mailTo:hello@betsydupuis.com">hello@betsydupuis.com</a> or
+                            <span class="text-nowrap" >
+                                connect on <a class="text-bold" target="_blank" href="https://www.linkedin.com/in/dupuisbetsy">LinkedIn</a>.
+                            </span>
+                        </p>
+                        <p class="" >
+                            P.S. I’m pretty good at coding in JavaScript, HTML, & CSS. You can find my work on
+                            <span class="text-nowrap">
+                                <a class="text-bold" target="_blank" href="https://github.com/betsydupuis">Github</a> and <a class="text-bold"  target="_blank" href="http://codepen.io/itsjustluck/">Codepen</a>.
+                            </span>
+                        </p>
 
 
                     <!--     <div class="row row-small-gutter row-gutter xs-hide sm-flex">
@@ -80,9 +112,21 @@
                                 <i class="fa  fa-dribbble"></i>
                             </a>
                         </div> -->
-                        <h4><a class="text-bold text-normal" href="#">Checkout my portfolio <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></h4>
-                        <h5>Connect with me on social media</h5>
-                        <div class="row row-small-gutter row-gutter xs-hide sm-flex">
+                       <!--  <h4><a class="text-bold text-normal" href="#">Checkout my portfolio <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></h4>
+                        <h5>Connect with me on social media</h5> -->
+         <!--                <div class="row row-small-gutter row-gutter xs-hide sm-flex nav">
+                            <a class="btn btn-link-default text-bold text-scale-xs-down-1"
+                             style="margin: 0;"
+                             href="https://dribbble.com/betsydupuis"
+                             target="_blank">
+                                <i class="fa  fa-dribbble"></i>&nbsp;Dribbble
+                            </a>
+                            <a class="btn btn-link-default text-bold text-scale-xs-down-1"
+                             style="margin: 0;"
+                             href="https://www.linkedin.com/in/dupuisbetsy"
+                             target="_blank">
+                                <i class="fa  fa-linkedin"></i>&nbsp;Linkedin
+                            </a>
                             <a class="btn btn-link-default text-bold text-scale-xs-down-1"
                              style="margin: 0;"
                              href="https://github.com/betsydupuis"
@@ -95,23 +139,13 @@
                              target="_blank">
                                 <i class="fa  fa-codepen"></i>&nbsp;Codepen
                             </a>
-                            <a class="btn btn-link-default text-bold text-scale-xs-down-1"
-                             style="margin: 0;"
-                             href="https://www.linkedin.com/in/dupuisbetsy"
-                             target="_blank">
-                                <i class="fa  fa-linkedin"></i>&nbsp;Linkedin
-                            </a>
-                            <a class="btn btn-link-default text-bold text-scale-xs-down-1"
-                             style="margin: 0;"
-                             href="https://dribbble.com/betsydupuis"
-                             target="_blank">
-                                <i class="fa  fa-dribbble"></i>&nbsp;Dribbble
-                            </a>
-                        </div>
+
+
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="col xs-12 sm-5 lg-5  scrollable-y bg-friendship-red text-right squeeze-y">
+            <div class="col xs-12 sm-5 lg-5  bg-friendship-red text-right squeeze-y">
                 <!-- <div class="xs-h-1">
                     <a  class="btn btn-small btn-ghost"
                     href="http://codepen.io/itsjustluck/"
