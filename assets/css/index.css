@@ -2637,7 +2637,8 @@ body {
   text-align: right; }
 
 .circle {
-  border-radius: 100%; }
+  border-radius: 100%;
+  overflow: hidden; }
 
 .outline-gray {
   border: 2px solid #ccc;
@@ -2756,7 +2757,9 @@ body,
   font-style: normal; }
 
 .text-serif {
-  font-family: "aleo", Georgia, serif; }
+  font-family: "aleo", Georgia, serif;
+  word-spacing: 0.25em;
+  letter-spacing: -0.0125em; }
 
 h1,
 h2,
@@ -3087,6 +3090,9 @@ a {
 
 .text-normalcase {
   text-transform: none; }
+
+.text-nowrap {
+  white-space: nowrap; }
 
 @media (max-width: 1024px) {
   .text-scale-down-sm {
