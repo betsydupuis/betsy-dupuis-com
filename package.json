@@ -11,7 +11,7 @@
   },
   "config": {
     "server": {
-      "port": 8084,
+      "port": 1988,
       "directory": "dist"
     }
   },
