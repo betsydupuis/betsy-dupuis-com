@@ -1,0 +1,11 @@
+.hover {
+    &.zoom {
+    	opacity: 1;
+        transition: 0.75s all ease;
+
+    	&:hover {
+    	    transition: 0.333s all ease;
+    	    transform: scale(1.25);
+    	}
+    }
+}
