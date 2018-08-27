@@ -2778,7 +2778,7 @@ h1,
 .h1 {
   font-size: 3rem;
   /* 3rem*/
-  line-height: 1em;
+  line-height: 1;
   /* 1rem*/
   margin-bottom: 0.5em;
   /*.5rem*/ }
@@ -2787,7 +2787,7 @@ h2,
 .h2 {
   font-size: 2.5rem;
   /* 2.25rem*/
-  line-height: 1.33333em;
+  line-height: 1.33333;
   /* 1.333333333333333rem*/
   margin-bottom: 0.66667em;
   /*.6666666666666667rem*/ }
@@ -2796,7 +2796,7 @@ h3,
 .h3 {
   font-size: 1.75rem;
   /* 1.5rem*/
-  line-height: 1em;
+  line-height: 1;
   /* 1rem*/
   margin-bottom: 1em;
   /* 1rem*/
@@ -2807,7 +2807,7 @@ h4,
   font-size: 1.5rem;
   /* 1.3125rem*/
   font-weight: 900;
-  line-height: 1.14286em;
+  line-height: 1.14286;
   /* 1.142857142857143rem*/
   margin-bottom: 1.14286em;
   /*1.142857142857143rem*/
@@ -2819,7 +2819,7 @@ h5,
   font-size: 1.33333rem;
   /* 1.125rem*/
   font-weight: bold;
-  line-height: 1.33333em;
+  line-height: 1.33333;
   /* 1.333333333333333rem*/
   margin-bottom: 1.5em;
   /*1.333333333333333rem*/ }
@@ -2830,36 +2830,39 @@ h6,
   font-size: 1.33333rem;
   line-height: 1.5em; }
 
+.heading-tight {
+  margin-bottom: 0.08333em; }
+
 @media (min-width: 768px) {
   h1 {
     font-size: 4rem;
-    line-height: 1em;
+    line-height: 1;
     margin-bottom: 0.5em; }
   h2 {
     font-size: 3rem;
-    line-height: 1.33333em;
+    line-height: 1.33333;
     margin-bottom: 0.66667em; }
   h3 {
     font-size: 2.5rem;
-    line-height: 1em;
+    line-height: 1;
     margin-bottom: 1em;
     font-weight: 300; }
   h4 {
     font-size: 1.75rem;
     font-weight: 900;
-    line-height: 1.14286em;
+    line-height: 1.14286;
     margin-bottom: 1.14286em;
     color: #666; }
   h5 {
     font-size: 1.5rem;
     font-weight: bold;
-    line-height: 1.33333em;
+    line-height: 1.33333;
     margin-bottom: 1.5em; }
   h6 {
     font-weight: bold; }
   h6 {
     font-size: 1.33333rem;
-    line-height: 1.5em; } }
+    line-height: 1.5; } }
 
 hr {
   border-bottom: 0;
@@ -5724,7 +5727,14 @@ a.btn-ghost {
 
 .img-fit {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
+
+.hover-zoom {
+  transition: 0.75s all ease; }
+  .hover-zoom:hover {
+    transition: 0.5s all ease;
+    transform: scale(1.5); }
 
 .bg-orange {
   background: #ff5400;
