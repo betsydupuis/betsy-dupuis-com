@@ -2966,6 +2966,12 @@ a {
 .text-scale-xs-up-6 {
   font-size: 4em; }
 
+.text-scale-xs-down-1 {
+  font-size: 0.75em; }
+
+.text-scale-xs-down-2 {
+  font-size: 0.66667em; }
+
 .text-scale-xs-down-2 {
   font-size: 0.66667em; }
 
@@ -2997,6 +3003,10 @@ a {
     font-size: 3em; }
   .text-scale-sm-up-6 {
     font-size: 4em; }
+  .text-scale-sm-down-1 {
+    font-size: 0.75em; }
+  .text-scale-sm-down-2 {
+    font-size: 0.66667em; }
   .text-scale-sm-down-2 {
     font-size: 0.66667em; }
   .text-scale-sm-down-3 {
@@ -3023,6 +3033,10 @@ a {
     font-size: 3em; }
   .text-scale-md-up-6 {
     font-size: 4em; }
+  .text-scale-md-down-1 {
+    font-size: 0.75em; }
+  .text-scale-md-down-2 {
+    font-size: 0.66667em; }
   .text-scale-md-down-2 {
     font-size: 0.66667em; }
   .text-scale-md-down-3 {
@@ -3049,6 +3063,10 @@ a {
     font-size: 3em; }
   .text-scale-lg-up-6 {
     font-size: 4em; }
+  .text-scale-lg-down-1 {
+    font-size: 0.75em; }
+  .text-scale-lg-down-2 {
+    font-size: 0.66667em; }
   .text-scale-lg-down-2 {
     font-size: 0.66667em; }
   .text-scale-lg-down-3 {
@@ -3075,6 +3093,10 @@ a {
     font-size: 3em; }
   .text-scale-xl-up-6 {
     font-size: 4em; }
+  .text-scale-xl-down-1 {
+    font-size: 0.75em; }
+  .text-scale-xl-down-2 {
+    font-size: 0.66667em; }
   .text-scale-xl-down-2 {
     font-size: 0.66667em; }
   .text-scale-xl-down-3 {

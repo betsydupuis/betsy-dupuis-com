@@ -18,28 +18,41 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class=" xs-12 xs-h-12 squeeze-y">
+    <div class=" xs-12 xs-h-12 squeeze-y container-scroll-area">
         <!-- container-fluid -->
-        <div class="container-fluid xs-12">
+        <div class="container-fluid xs-12 ">
             <div class="row nav text-right">
-                <a class="fill text-left col row-gutter-top text-scale-2 text-display h4 btn-link-default"
+                <a class="fill text-left col row-gutter-top text-display h4 btn-link-default"
                  href="/"
                  style="color:#4c2c40;">
                     <span class="text-serif text-normalcase">Betsy Dupuis</span>
                     | UX Designer
                 </a>
-                <!-- <a class="col row-gutter-top text-scale-2 text-display h4 btn-link-default"
+                <!-- <a class="col row-gutter-top text-scale-xs-down-1 text-display h4 btn-link-default"
                     href="">How I work</a> -->
-                <a class="col row-gutter-top text-scale-2 text-display h4 btn-link-default"
-                 href="portfolio">Portfolio</a>
-                <a class="col row-gutter-top text-scale-2 text-display h4 btn-link-default"
+                <a class="col row-gutter-top xs-hide md-flex h4 btn-link-default"
+                 href="portfolio">
+                <span class="text-scale-xs-down-1 text-scale-md-up-0">
+                    Portfolio
+                </span>
+             </a>
+                <a class="col row-gutter-top xs-hide md-flex h4 btn-link-default"
                  href="https://docs.google.com/document/d/1JHW8H9bxEWknH9IpMkYznDJ_w3qiuiiykBxiAMzaWPY/edit#heading=h.bzzpd25aeamy"
-                 target="_blank">Resume</a>
-                <a class="col row-gutter-top text-scale-2 text-display h4 btn-link-default active"
-                 href="contact">Contact</a>
+                 target="_blank">
+                <span class="text-scale-xs-down-1 text-scale-md-up-0">
+                    Resume
+                </span>
+                 </a>
+                <a class="col row-gutter-top xs-hide md-flex text-display h4 btn-link-default active"
+                 href="contact">
+
+                    <span class="text-scale-xs-down-1 text-scale-md-up-0">
+                        Contact
+                    </span>
+                 </a>
             </div>
         </div>
-        <div class="row xs-h-12 fit "
+        <div class="row fill scroll-area"
          style=" flex-direction: row-reverse">
             <div class="container-fluid container-center-content md-fixed-7 xs-h-12">
                 <h2>Drop me a line.</h2>
@@ -53,22 +66,46 @@
                     <a class="btn btn-link-default"
                      href="https://github.com/betsydupuis"
                      target="_blank"> <i class="btn btn-link-default fa fa-github"></i> Github
-                </a>
+                    </a>
                     <a class="btn btn-link-default"
                      href="http://codepen.io/itsjustluck/"
                      target="_blank"> <i class="btn btn-link-default fa fa-codepen"></i> Codepen
-                </a>
+                    </a>
                     <a class="btn btn-link-default"
                      href="https://www.linkedin.com/in/dupuisbetsy"
                      target="_blank"> <i class="btn btn-link-default fa fa-linkedin"></i> Linkedin
-                </a>
+                    </a>
                     <a class="btn btn-link-default"
                      href="https://dribbble.com/betsydupuis"
                      target="_blank"> <i class="btn btn-link-default fa fa-dribbble"></i> Dribbble
-                </a>
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="row nav md-hide text-right scroll-area-footer"
+         style="justify-content: space-around;">
+            <a class="col row-gutter-top text-display h4 btn-link-default"
+             href="portfolio">
+                <span class="text-scale-xs-down-1 text-scale-md-up-0">
+                    Portfolio
+                </span>
+            </a>
+            <a class="col row-gutter-top text-display h4 btn-link-default"
+             disabled
+             href="https://docs.google.com/document/d/1JHW8H9bxEWknH9IpMkYznDJ_w3qiuiiykBxiAMzaWPY/edit#heading=h.bzzpd25aeamy"
+             target="_blank">
+                <span class="text-scale-xs-down-1 text-scale-md-up-0">
+                    Resume
+                </span>
+            </a>
+            <a class="col row-gutter-top text-display h4 btn-link-default  active"
+             href="contact">
+                <span class="text-scale-xs-down-1 text-scale-md-up-0">
+                    Contact
+                </span>
+            </a>
+        </div>
+    </div>
 </body>
 <script>
 (function(b, o, i, l, e, r) {
