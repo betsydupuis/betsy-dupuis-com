@@ -63,6 +63,8 @@
     @include text-scale-up($scale-6,  $screen-size, 6)
 }
 @mixin text-scale-down-list ($screen-size) {
+    @include text-scale-down($scale-down-1,  $screen-size, 1)
+    @include text-scale-down($scale-down-2,  $screen-size, 2)
     @include text-scale-down($scale-down-2,  $screen-size, 2)
     @include text-scale-down($scale-down-3,  $screen-size, 3)
     @include text-scale-down($scale-down-4,  $screen-size, 4)
