@@ -1,3 +1,12 @@
+@media (pointer:coarse) {
+    .scrollable,
+    .scrollable-y,
+    .scrollable-x {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
 .scrollable {
     overflow: auto;
 
