@@ -11,9 +11,19 @@
     border: none;
     margin-bottom: 0;
     background-image: none;
-    vertical-align: middle;
-
-    // text-align: center;
+    vertical-align: middle; // text-align: center;
     // font-weight: 400;
     // color: #666;
+}
+
+@mixin colorize-link($color, $color-hover) {
+    color: $color;
+    &:visited {
+        color: $color;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+        color: $color-hover;
+    }
 }
