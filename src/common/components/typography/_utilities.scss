@@ -3,9 +3,7 @@
 //------------------------------------------------
 //  Resuable Style Properties
 //===========================
-
 //  Spacing
-
 .indent-default {
     padding: 12px;
 }
@@ -40,97 +38,17 @@
 }
 
 .truncate-line-4 {
-    display: -webkit-box;
-
-    //Must be  -webkit-box  not display: flex;
+    display: -webkit-box; //Must be  -webkit-box  not display: flex;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow-y: hidden;
     text-overflow: ellipsis;
 }
 
+
 /* http://www.cssmojo.com/line-clamp_for_non_webkit-based_browsers/ */
 
 //  Spacing
-
 .indent-default {
     padding: 12px;
-}
-
-.xs {
-    &-hide {
-        display: none;
-    }
-
-    &-flex {
-        display: flex;
-    }
-
-    &-show {
-        display: initial;
-    }
-}
-
-@media (min-width: $breakpoint-sm) {
-    .sm {
-        &-hide {
-            display: none;
-        }
-
-        &-flex {
-            display: flex;
-        }
-
-        &-show {
-            display: initial;
-        }
-    }
-}
-
-@media (min-width: $breakpoint-md) {
-    .md {
-        &-hide {
-            display: none;
-        }
-
-        &-flex {
-            display: flex;
-        }
-
-        &-show {
-            display: initial;
-        }
-    }
-}
-
-@media (min-width: $breakpoint-lg) {
-    .lg {
-        &-hide {
-            display: none;
-        }
-
-        &-flex {
-            display: flex;
-        }
-
-        &-show {
-            display: initial;
-        }
-    }
-}
-
-@media (min-width: $breakpoint-xl) {
-    .xl {
-        &-hide {
-            display: none;
-        }
-
-        &-flex {
-            display: flex;
-        }
-
-        &-show {
-            display: initial;
-        }
-    }
 }

@@ -1,4 +1,17 @@
+@mixin colorize-link($color-value, $hover-color-value) {
+    color: $color-value;
+    &:visited {
+        color: $color-value;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+        color: $hover-color-value;
+    }
+}
+
 @mixin color-helpers ($color-name, $color-value) {
+    $hover-color-value: darken($color-value, 20%);
     .bg-#{$color-name} {
         background-color: $color-value;
     }
@@ -8,26 +21,30 @@
     .text-#{$color-name} {
         color: $color-value;
     }
+    .link-#{$color-name} {
+        @include colorize-link($color-value, $hover-color-value);
+    }
 }
 
+@mixin btn-color-helper {}
 
-$color-scheme-midcentury: (
-    white: #fff,
-    wine: #834680,
-    cadillac-pink: #d01b58,
-    friendship-red: #da4205,
-    dreamsicle-orange: #ff8d04,
-    skyline-blue: #028fc4,
-    stoplight-green: #64dd17,
-    light-gray: $light-gray, //#edeff1,
+$color-scheme-midcentury: ( white: #fff,
+wine: #834680,
+cadillac-pink: #d01b58,
+friendship-red: #da4205,
+dreamsicle-orange: #ff8d04,
+skyline-blue: #028fc4,
+stoplight-green: #64dd17,
+light-gray: $light-gray, //#edeff1,
 );
 
 
 
 @mixin color-helpers-from-map ($color-map) {
-    @each $color-name, $color-value in $color-map {
-      @include color-helpers ($color-name, $color-value);
-      @include color-helpers ("#{$color-name}-light", lighten( $color-value, 20%));
+    @each $color-name,
+    $color-value in $color-map {
+        @include color-helpers ($color-name, $color-value);
+        @include color-helpers ("#{$color-name}-light", lighten( $color-value, 20%));
     }
 }
 

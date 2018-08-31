@@ -2,6 +2,23 @@
 
 $link-color: #ff5400;
 $link-color-hover: #ff8d04;
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a {
+    @include colorize-link($link-color, #ff8d04);
+    &:active,
+    &:focus,
+    &:hover,
+    {
+        text-decoration: none;
+    }
+}
+
+
+
 //===========================
 // Buttons
 //------------------------------------------------
@@ -16,10 +33,20 @@ $link-color-hover: #ff8d04;
         margin-left: 0.75em;
     }
 }
+
 .btn-image,
 .btn-img {
     @include btn-behavior;
 }
+
+.btn-copyblock {
+    @include btn-behavior;
+    display: block;
+    white-space: initial;
+    @include colorize-link(inherit, inherit);
+    @extend .cursor-pointer;
+}
+
 
 // Button sizes
 .btn-sm {
@@ -73,29 +100,14 @@ $link-color-hover: #ff8d04;
     }
 }
 
-@mixin colorize-link($color, $color-hover) {
-    color: $color;
-
-    &:active,
-    &:focus,
-    &:hover {
-        color: $color-hover;
-    }
+.btn-rounded {
+    border-radius: 50px;
 }
 
-a,
-a:visited {
-    @include colorize-link($link-color,  #ff8d04);
-    &:active,
-    &:focus,
-    &:hover {
-        text-decoration: none;
-    }
-}
 
 // Components
 .btn-group {
-    > .btn-link {
+    >.btn-link {
         display: inline-block;
         margin-right: 24px;
     }
@@ -108,6 +120,5 @@ a:visited {
 
 a.btn-link-default,
 .btn-link-default {
-    @include colorize-link(#000, #333);
+    @include colorize-link(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
 }
-

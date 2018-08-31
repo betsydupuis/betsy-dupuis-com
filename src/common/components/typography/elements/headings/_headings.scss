@@ -70,8 +70,12 @@ h4,
     /* 1.142857142857143rem*/
     margin-bottom: (24 / 21) + em;
     /*1.142857142857143rem*/
-    color: #666;
     text-transform: uppercase;
+}
+
+h4 {
+    color: #666;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 h5,
@@ -122,7 +126,6 @@ h6,
         font-weight: 900;
         line-height: (24 / 21); // 1.142857142857143rem
         margin-bottom: (24 / 21) + em; //1.142857142857143rem
-        color: #666;
     }
 
     h5 {
